@@ -1,0 +1,62 @@
+<!-- COMP804 - Assessment Task 3 Assignment 1 - Task 2 by Jacques Jeon -->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Task 2: Use CSS to style a table</title>
+    <style>
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+    }
+
+    th, td {
+      padding: 5px;
+      border: 1px solid #ddd
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+
+    #title {
+      font-size: 20px; 
+      font-family: 'Courier New', Courier, monospace;
+      background-color: darkcyan;
+      padding:5px;
+      text-align: left;
+      border-style:dotted; 
+      border-color: grey;
+      border-width: 3px;
+      }
+</style>
+</head>
+<body>
+
+    <table>
+      <tr>
+        <th id="title">Activity</th>
+        <th id="title">Date</th>
+      </tr>
+      <tr>
+        <td style="color:tomato">Soccer</td>
+        <td>01/Feb/2023</td>
+      </tr>
+      <tr>
+        <td style="color:blueviolet">Swimming</td>
+        <td>04/Feb/2023</td>
+      </tr>
+      <tr>
+        <td style="color:darkorange">Hiking</td>
+        <td>06/Feb/2023</td>
+      </tr>
+      <tr>
+        <td style="color:goldenrod">Academic workshop</td>
+        <td>07/Feb/2023</td>
+      </tr>
+    </table>
+
+  </body>
+
+</html>

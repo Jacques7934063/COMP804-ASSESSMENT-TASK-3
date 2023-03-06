@@ -1,0 +1,58 @@
+﻿<!-- COMP804 - Assessment Task 3 Assignment 1 - Task 4 by Jacques Jeon -->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Task 4: Javascript with button </title>
+	<script>
+				
+		function cat() {
+        	document.getElementById("display").value = "User clicks Cat";
+            var image = document.getElementById("imageDisplay"); // cat image from Pixabay website
+			image.src="cat.jpg" ;
+            const messageContainer = document.getElementById("message-container");
+			messageContainer.innerHTML = "Cat is clicked";
+			messageContainer.style.color = "black";
+			messageContainer.style.fontSize = "30px";
+      	};
+
+          function dog() {
+        	document.getElementById("display").value = "User clicks Dog";
+            var image = document.getElementById("imageDisplay");  // dog image from Pixabay website
+			image.src="dog.jpg"; 
+            const messageContainer = document.getElementById("message-container");
+			messageContainer.innerHTML = "Dog is clicked";
+			messageContainer.style.color = "black";
+			messageContainer.style.fontSize = "30px";
+		}
+
+
+
+      	function frog() {
+        	document.getElementById("display").value = "User clicks Frog";
+            var image = document.getElementById("imageDisplay");  // frog image from Pixabay website
+			image.src="frog.jpg"; 
+            const messageContainer = document.getElementById("message-container");
+			messageContainer.innerHTML = "Frog is clicked";
+			messageContainer.style.color = "black";
+			messageContainer.style.fontSize = "30px";
+      	};
+
+    </script>
+	
+	
+</head>
+
+<body>
+
+	<button onclick="cat()">Cat</button>
+    <button onclick="dog()">Dog</button>
+    <button onclick="frog()">Frog</button>
+    <br><br>
+	<input type="text" id="display"><br/>
+    <div id="message-container"></div><br/>
+    <img src id="imageDisplay"></img>
+
+</body>
+
+</html>
